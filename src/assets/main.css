@@ -51,6 +51,21 @@ h3, h4 {
 h5, h6 {
   font-weight: 500;
 }
+
+/* Utility Classes */
+
 .poppins {
   font-family: 'Poppins', sans-serif;
+}
+.we-7 {
+  font-weight: 700;
+}
+.we-6 {
+  font-weight: 600;
+}
+.we-5 {
+  font-weight: 500;
+}
+.we-4 {
+  font-weight: 400;
 }

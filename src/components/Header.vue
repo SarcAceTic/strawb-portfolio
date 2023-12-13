@@ -3,7 +3,7 @@
 <template>
   <v-app-bar class="pa-2" elevation="4">
     <v-app-bar-title>
-      <div class="d-flex align-center">
+      <div class="d-flex banner-container align-center">
         <v-img max-height="35" max-width="35" src="/strawberryicon.png"></v-img>
         <h3 class="ml-2 mr-1">Strawberry</h3>
         <h3 class="text-purple">Chae</h3>
