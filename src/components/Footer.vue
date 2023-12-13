@@ -18,11 +18,10 @@
     </p>
     <p class="mt-5">
       This website is under the
-      <b>MIT License</b>
-      . You can take a look at the repository here:
+      <b>MIT License</b>. You can take a look at the repository here:
       <a href="https://github.com/SarcAceTic/strawb-portfolio/" target="_blank">
         <v-icon>mdi-github</v-icon>
-        Repository
+        strawb-portfolio
       </a>
     </p>
   </v-footer>
