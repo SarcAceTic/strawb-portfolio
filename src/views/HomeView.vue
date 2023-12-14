@@ -7,5 +7,5 @@ import MyArtworks from '../components/MyArtworks.vue'
 <template>
   <Hero />
   <AboutMe class="my-5" />
-  <MyArtworks class="my-5 mt-16" />
+  <MyArtworks class="my-5"/>
 </template>

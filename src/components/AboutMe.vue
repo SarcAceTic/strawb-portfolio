@@ -3,39 +3,58 @@
 <template>
   <section>
     <v-container>
-      <v-row no-gutters>
-        <v-col lg="6">
+      <v-row class="flex-column-reverse flex-sm-row" no-gutters>
+        <v-col cols="10" sm="6" class="mx-auto" lg="6">
           <h2 class="poppins we-4 text-uppercase">About Me</h2>
           <v-divider class="my-4" width="200rem"></v-divider>
           <p class="text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis consequatur nemo
-            cumque beatae cupiditate architecto, obcaecati exercitationem, commodi repellat harum
-            quam quae impedit eos enim culpa, libero eligendi dolor. Laboriosam pariatur voluptatem
-            quos dolore dicta. Cupiditate, recusandae ipsa magnam, labore architecto atque ipsum
-            dolorem iusto at repellat totam fugit autem?
+            I enjoy drawing many things but anime characters seem to be my favorite things to draw!
+            I also love painting and coloring with ink or paint markers! I like creating things that
+            could be useful in future or present! 
           </p>
           <p class="mt-4 text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt numquam dolore amet
-            harum ducimus! Sunt deserunt commodi beatae eveniet tempora consequuntur veritatis
-            laborum rerum placeat, nulla quos amet quia!
+            I enjoy most types of music but I mainly listen to
+            indie rock or Kpop! I often listen to ‘Eyedress’ and ‘StrayKids’! My favorite song by
+            eyedress is “Nice Girl from a Nice Part of Town” and for StrayKids, “3rd Eye” is my
+            favorite! I’ve met a lot of amazing people online and irl so talking to them simply
+            makes me happy!
           </p>
         </v-col>
         <v-divider class="mx-4" vertical></v-divider>
-        <v-col class="align-self-center" lg="5">
-          <div class="d-flex align-center flex-row">
+        <v-col class="mx-sm-auto align-self-center mb-7" cols="7" sm="5" lg="5">
+          <div class="d-flex align-center flex-column flex-lg-row">
             <v-avatar class="mr-4" size="250" image="/pfp.jpg"></v-avatar>
             <div class="d-flex flex-column">
-              <div class="about-me-name mb-4 d-flex flex-row">
+              <div class="about-me-name mt-4 mt-lg mx-sm-auto mb-4 d-flex">
                 <h3 class="poppins we-4 text-uppercase">strawberry</h3>
-                <h3 class="poppins ml-1 we-4 text-uppercase text-purple">chae</h3>
+                <h3 class="poppins ml-1 we-4 text-uppercase text-purple-accent-1">chae</h3>
               </div>
-              <p><b class="text-purple">Pronouns</b>: she/her</p>
-              <p><b class="text-purple">Age</b>: 14</p>
-              <p><b class="text-purple">Nationality</b>: American</p>
-              <p><b class="text-purple">Zodiac Sign</b>: Virgin</p>
+              <div class="about-me-info mx-sm-auto d-flex flex-column">
+                <p>
+                  <b class="text-purple-accent-1">Pronouns</b>
+                  : she/her
+                </p>
+                <p>
+                  <b class="text-purple-accent-1">Age</b>
+                  : Ask >:(
+                </p>
+                <p>
+                  <b class="text-purple-accent-1">Nationality</b>
+                  : American
+                </p>
+                <p>
+                  <b class="text-purple-accent-1">Zodiac Sign</b>
+                  : Sagittarius
+                </p>
+                <p class="mt-lg-6">
+                  <b class="text-purple-accent-1">Hobbies</b>
+                  : Art, crafting, music
+                  <br />
+                  & talking to friends!
+                </p>
+              </div>
             </div>
           </div>
-          <p class="mt-6"><b class="text-purple">Hobbies</b>: Drawing, being dumb, and getting bullied by Sarc</p>
         </v-col>
       </v-row>
     </v-container>
@@ -44,6 +63,6 @@
 
 <style scoped>
 .about-me-name {
-    font-size: 25px;
+  font-size: 25px;
 }
 </style>

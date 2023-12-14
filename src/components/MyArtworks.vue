@@ -11,19 +11,33 @@ const artworks = [
 
 <template>
   <section>
-    <v-container>
+    <v-container fluid>
       <h2 class="poppins we-4 text-center text-uppercase">My artworks</h2>
       <v-divider width="250rem" class="my-4 mb-7 mx-auto"></v-divider>
-      <div class="text-center d-flex flex-row flex-wrap">
+      <div class="d-none d-md-flex mx-auto justify-center flex-row flex-wrap">
         <div class="zoom-darken rounded-shaped ma-4 my-3" v-for="artwork in artworks">
           <img class="rounded-shaped" :src="artwork" width="200px" height="200px" />
         </div>
       </div>
+      <v-carousel class="mx-auto d-md-none carousel-image" height="350px">
+        <v-carousel-item class="zoom-darken" v-for="artwork in artworks">
+          <img class="item-image" :src="artwork" />
+          </v-carousel-item>
+      </v-carousel>
     </v-container>
   </section>
 </template>
 
 <style scoped>
+.item-image {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.carousel-image {
+  background-size: 100% 100%;
+  width: 320px;
+}
 .zoom-darken {
   overflow: hidden;
 }
