@@ -19,7 +19,7 @@ const artworks = [
           <img class="rounded-shaped" :src="artwork" width="200px" height="200px" />
         </div>
       </div>
-      <v-carousel class="mx-auto d-md-none carousel-image" height="350px">
+      <v-carousel hide-delimiters class="mx-auto mt-16 d-md-none carousel-image" height="350px">
         <v-carousel-item class="zoom-darken" v-for="artwork in artworks">
           <img class="item-image" :src="artwork" />
           </v-carousel-item>
