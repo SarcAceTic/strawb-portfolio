@@ -7,14 +7,21 @@ const artworks = [
   'artwork-5.png',
   'artwork-6.png'
 ]
+import { ref } from 'vue'
+
+let isIntersecting = ref(false)
+
+const onIntersect = (isInter, entries, observer) => {
+  isIntersecting.value = isInter
+}
 </script>
 
 <template>
   <section>
-    <v-container fluid>
-      <h2 class="poppins we-4 text-center text-uppercase">My artworks</h2>
-      <v-divider width="250rem" class="my-4 mb-7 mx-auto"></v-divider>
-      <div class="d-none d-md-flex mx-auto justify-center flex-row flex-wrap">
+    <v-container v-intersect="onIntersect" fluid>
+      <h2 :class="{'enter-up': isIntersecting }" class="poppins we-4 text-center text-uppercase">My artworks</h2>
+      <v-divider :class="{'pop-out-divider': isIntersecting }" width="250rem" class="my-4 mb-7 mx-auto"></v-divider>
+      <div :class="{'enter-up': isIntersecting }" class="d-none d-md-flex mx-auto justify-center flex-row flex-wrap">
         <div class="zoom-darken rounded-shaped ma-4 my-3" v-for="artwork in artworks">
           <img class="rounded-shaped" :src="artwork" width="200px" height="200px" />
         </div>
