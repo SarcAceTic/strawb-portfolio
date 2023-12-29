@@ -17,7 +17,7 @@ const onIntersect = (isInter, entries, observer) => {
 </script>
 
 <template>
-  <section>
+  <section id="my-artworks">
     <v-container v-intersect="onIntersect" fluid>
       <h2 :class="{'enter-up': isIntersecting }" class="poppins we-4 text-center text-uppercase">My artworks</h2>
       <v-divider :class="{'pop-out-divider': isIntersecting }" width="250rem" class="my-4 mb-7 mx-auto"></v-divider>

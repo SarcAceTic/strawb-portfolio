@@ -8,7 +8,10 @@
   margin: 0;
   font-weight: normal;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
 body {
   min-height: 100vh;
   color: rgba(235, 235, 235, 0.64);

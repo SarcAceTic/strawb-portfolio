@@ -13,9 +13,9 @@ let navDrawer = ref(false)
         <h3 class="poppins text-purple">Chae</h3>
       </div>
     </v-app-bar-title>
-    <v-btn class="d-none d-md-flex mx-2">Home</v-btn>
-    <v-btn class="d-none d-md-flex mx-2">About</v-btn>
-    <v-btn class="d-none d-md-flex mx-2">My Artworks</v-btn>
+    <v-btn href="#image-container" class="d-none d-md-flex mx-2">Home</v-btn>
+    <v-btn href="#about-me" class="d-none d-md-flex mx-2">About</v-btn>
+    <v-btn href="#my-artworks" class="d-none d-md-flex mx-2">My Artworks</v-btn>
     <v-app-bar-nav-icon
       @click.stop="navDrawer = !navDrawer"
       class="d-flex d-md-none"></v-app-bar-nav-icon>
@@ -25,17 +25,17 @@ let navDrawer = ref(false)
       <v-img class="sass h-100" src="/someimage.jpg"></v-img>
     </template>
     <v-list class="mt-4">
-      <v-list-item prepend-icon="mdi-home" link>
+      <v-list-item prepend-icon="mdi-home" href="#image-container">
         <p class="text-button">
           home
         </p>
       </v-list-item>
-      <v-list-item prepend-icon="mdi-account" link>
+      <v-list-item prepend-icon="mdi-account" href="#about-me">
         <p class="text-button">
           about me
         </p>
       </v-list-item>
-      <v-list-item prepend-icon="mdi-palette" link>
+      <v-list-item prepend-icon="mdi-palette" href="#my-artworks">
         <p class="text-button">
           my artworks
         </p>

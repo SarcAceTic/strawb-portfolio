@@ -3,7 +3,7 @@
 <template>
   <section>
     <v-container fluid class="ma-0 pa-0">
-      <div class="image-container">
+      <div id="image-container" class="image-container">
         <img class="banner-image w-100 h-screen" src="/background-1.jpg" />
         <div class="text-grey-lighten-1 w-100 text-placement">
           <v-row class="mt-n16 mt-sm-0 justify-center flex-column-reverse flex-sm-row" no-gutters>

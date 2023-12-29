@@ -9,7 +9,7 @@ const onIntersect = (isInter, entries, observer) => {
 </script>
 
 <template>
-  <section>
+  <section id="about-me">
     <v-container>
       <v-row v-intersect="onIntersect" class="flex-column-reverse flex-sm-row" no-gutters>
         <v-col  cols="10" sm="6" class="mx-auto" lg="6">
